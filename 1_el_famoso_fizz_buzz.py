@@ -10,4 +10,18 @@
 '''
 
 for i in range (1, 101):
-    print(i)
+    
+    res3 = i%3
+    res5 = i%5
+    
+    if res3 == 0  and res5 == 0:
+        print('fizzbuzz')
+
+    elif res5 == 0:
+        print('buzz')
+        
+    elif res3 == 0:
+        print('fizz')
+    
+    else:
+        print(i)
